@@ -2,6 +2,8 @@
 
 set -e
 
+HOSTNAME=`hostname --fqdn`
+
 # Ensures the current node is running, otherwise fails
 require_live_node() {
     require_cookie
